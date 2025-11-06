@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacen de Suministros</title>
+    <meta property="og:title" content="Almacen de Suministros (prototipo)" />
+    <meta property="og:description" content="Prototipo de un almacen de suministros con TypeScript" />
+    <meta property="og:image" content="./resources/logo.png">
+    <meta property="og:url" content=https://github.com/brytim799/PrototipoTipotico.git />
+    <meta property="og:type" content="website" />
+    <meta rel="icon" type="image/ico" href="./resources/favicon.ico" />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h3 style="width: 320px; ">Proyecto de Almacen</h3>
+    <section id="almacen">
+        <div>
+            <button id="almacen_btAgregarCarga">Agregar Carga</button>
+        </div>
+    </section>
+    <section style="font-size: 10px;">
+        <h3>Cargas Registradas</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 150px;">ID de la Carga</th>
+                        <th style="width: 80px;">Objeto 1</th>
+                        <th style="width: 80px;">Objeto 2</th>
+                        <th style="width: 80px;">Objeto 3</th>
+                        <th style="width: 80px;">Objeto 4</th>
+                    </tr>
+                </thead>
+                <tbody id="almacen_divListadoCargas"> </tbody>
+            </table>
+    </section>
+    <script type="module">
+        import Cl_index from "./dist/Cl_index.js";
+        new Cl_index()
+    </script>
+</body>
+</html>
