@@ -63,8 +63,8 @@ export default class Cl_mSuministro {
     error(): string | false {
         if (this.objeto1 === '' || this.objeto2 === '')
             return 'Los campos Objeto 1 y Objeto 2 son obligatorios';
-        if (this.objeto1 === this.objeto2)
-            return 'Los Objetos 1 y 2 no pueden ser iguales';
+        if (this.objeto1 === this.objeto2 || this.objeto3 === this.objeto4 || this.objeto1 === this.objeto3 || this.objeto1 === this.objeto4 || this.objeto2 === this.objeto3 || this.objeto2 === this.objeto4)
+            return 'Los objetos no pueden repetirse entre sí';
         return false;
     }
     existeObjeto(objeto: string | null): boolean {
