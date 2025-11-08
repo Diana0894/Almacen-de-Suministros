@@ -7,6 +7,7 @@ verificar si las IDs de las cargas no sean iguales para evitar inconvenientes*/
 import Cl_Controlador from "./Cl_Controlador.js";
 import Cl_mAlmacen from "./Cl_mAlmacen.js";
 import Cl_vAlmacen from "./Cl_vAlmacen.js";
+
 export default class Cl_index {
     public modelo: Cl_mAlmacen;
     public vista: Cl_vAlmacen;
